@@ -24,7 +24,7 @@ int main(){
         case secretary: cout<<"Employee type is secretary."; break;
         case manager: cout<<"Employee type is manager."; break;
         case accountant: cout<<"Employee type is accountant."; break;
-        case executive: cout<<"Employee type is executuve."; break;
+        case executive: cout<<"Employee type is executive."; break;
         case researcher: cout<<"Employee type is researcher."; break;
 
     }
