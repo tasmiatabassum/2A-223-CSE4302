@@ -4,9 +4,9 @@
  class BankAccount{
     private:
         string customer_name;
-        int acc_number;
-        string acc_type;
-        int acc_balance;
+        int acc_number;// string should be a better choice
+        string acc_type;// enum is a better choice
+        float acc_balance;
 
     public:
         BankAccount(){
@@ -22,11 +22,11 @@
         void balance(){
             cout<<"Your balance is: "<<acc_balance<<endl;
         }
-        void deposit(int deposit){
+        void deposit(float deposit){
             acc_balance += deposit;
             cout<<"Your current balance is: "<<acc_balance<<endl;
         }
-        void withdraw(int amount){
+        void withdraw(float amount){
             if(acc_balance>=amount){
                 acc_balance -=amount;
                 cout<<"Your current balance is: "<<acc_balance<<endl;
@@ -50,8 +50,8 @@
      account.customerDetails("Tasmia Tabassum", 23455);
      account.accountType("Saving");
      account.balance();
-     account.deposit(50000000);
-     account.withdraw(10000);
+     account.deposit(5000.344);
+     account.withdraw(100.45);
      account.display();
 
 
